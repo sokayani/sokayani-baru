@@ -1,0 +1,181 @@
+body {
+  margin: 0px;
+}
+
+header {
+  background-color: #0d9276;
+  padding: 10px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+header nav {
+  display: flex;
+  gap: 10px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+header img {
+  width: 150px;
+}
+
+.button-register {
+  background-color: white;
+  font-size: 20px;
+  color: #0d9276;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: 2px solid #0d9276;
+}
+
+.button-login {
+  background-color: #0d9276;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: 2px solid white;
+  margin-left: 10px;
+}
+
+main {
+  padding: 0px 30px;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 0px 20px;
+}
+
+.produk {
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  border: 2px solid rgba(13, 146, 118, 0.4);
+  box-shadow: 2px 2px 3px rgba(71, 77, 75, 0.3);
+}
+
+.produk img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.keterangan {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.keterangan button[type="submit"] {
+  width: 100%;
+  padding: 10px 5px 10px 5px;
+  background-color: #0d9276;
+  border: unset;
+  border-radius: 5px;
+  color: white;
+}
+.harga {
+  font-weight: 800;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.section-1 {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.section-2 {
+  width: 50%;
+  border: 2px solid #0d9276;
+  padding: 10px;
+  align-self: self-start;
+  position: sticky;
+  top: 80px;
+  border-radius: 8px;
+}
+
+.section-2 h3 {
+  text-align: center;
+  margin-top: 0px;
+}
+
+.section-2 h4 {
+  margin: 10px 0px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-2 button {
+  width: 100%;
+  background-color: #0d9276;
+  border: unset;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 0px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+/* responsive breakpoint */
+
+@media (width < 950px){
+  .section-1 {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .button-navbar {
+    display: none;
+      }
+
+}
+
+
+@media (width < 700px){
+  .section-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+.content{
+  flex-direction: column;
+}
+header img {
+  width: 130px;
+}
+.section-2{
+  width: 96%;
+  }
+}
+
+
+@media (width < 500px){
+  .section-1 {
+    grid-template-columns: 1fr;
+  }
+
+.section-2{
+width: 94%;
+}
+}
